@@ -75,19 +75,19 @@ For details about how I created the training data, see the next section.
 
 ####1. Solution Design Approach
 
-The overall strategy for deriving a model architecture was to ...
 
-My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
+
+My first step was to use a convolution neural network model similar to the Nvidia Architecture I thought this model might be appropriate because it was used by real car and was proved working.
 
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
 
-To combat the overfitting, I modified the model so that ...
+To combat the overfitting, I add more data to it.
 
-Then I ... 
+Then I also try to add some relu layer.
 
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
+The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle stuck in the bridge. To improve the driving behavior in these cases, I drive forth and back with almost parallel to bridge angle.
 
-At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
+At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road or stuck in the bridge.
 
 ####2. Final Model Architecture
 
