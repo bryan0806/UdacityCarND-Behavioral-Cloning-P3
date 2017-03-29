@@ -16,10 +16,10 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/nvidia_architecture.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Center lane driving"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
+[image2]: ./examples/normal.jpg "Center lane driving"
+[image3]: ./examples/recovery01.jpg "Recovery Image"
+[image4]: ./examples/recovery02.jpg "Recovery Image"
+[image5]: ./examples/recovery03.jpg "Recovery Image"
 [image6]: ./examples/placeholder_small.png "Normal Image"
 [image7]: ./examples/placeholder_small.png "Flipped Image"
 
