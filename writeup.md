@@ -15,8 +15,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
+[image1]: ./examples/nvidia_architecture.png "Model Visualization"
+[image2]: ./examples/placeholder.png "Center lane driving"
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
@@ -81,7 +81,7 @@ My first step was to use a convolution neural network model similar to the Nvidi
 
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
 
-To combat the overfitting, I add more data to it.
+To combat the overfitting, I add more data to it. First, I flipped the original picture. Then I try to use left and right camera images as supplement. By these, I can triple the number of images.
 
 Then I also try to add some relu layer.
 
@@ -91,9 +91,10 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 ####2. Final Model Architecture
 
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
+The final model architecture (model.py lines ???) consisted of a convolution neural network with the following layers and layer sizes of 9.
 
 Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
+There are some modifications with below picture. I skipped dense layer 10 and let 50 to directly 1.
 
 ![alt text][image1]
 
