@@ -91,7 +91,7 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 ####2. Final Model Architecture
 
-The final model architecture (model.py lines ???) consisted of a convolution neural network with the following layers and layer sizes of 9.
+The final model architecture (model.py lines 173) consisted of a convolution neural network with the following layers and layer sizes of 9.
 
 Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
 There are some modifications with below picture. I skipped dense layer 10 and let 50 to directly 1.
@@ -104,7 +104,7 @@ To capture good driving behavior, I first recorded two laps on track one using c
 
 ![alt text][image2]
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to stay on the center as possible. These images show what a recovery looks like starting from the edge of road. :
 
 ![alt text][image3]
 ![alt text][image4]
@@ -116,9 +116,9 @@ To augment the data sat, I also flipped images and angles thinking that this wou
 
 
 
-After the collection process, I had ?? number of data points. 
+After the collection process, I had 12928 number of data points. 
 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
+I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by the accuracy.
